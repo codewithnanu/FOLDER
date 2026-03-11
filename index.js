@@ -93,11 +93,7 @@ app.get("/", (req, res) => {
       message: "Server is running",
   })
 });
-if (process.env.NODE_ENV !== "production") {
-  app.listen(5000, () => {
-    console.log("Server running locally");
-  });
-}
+
 
 module.exports = app;
 
